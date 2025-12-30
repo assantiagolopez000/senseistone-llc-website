@@ -93,20 +93,31 @@ header {
     position: fixed;
     width: 100%;
     z-index: 5;
-    background: var(--primary-color);
+    background: black;
 }
 
 header .navbar {
     display: flex;
-    padding: 20px;
+    padding: 8px;
     align-items: center;
     justify-content: space-between;
 }
 
 .navbar .nav-logo .logo-text {
+    margin-top: 80px;
     color: var(--white-color);
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-semibold);
+}
+
+.navbar .nav-logo .logo_image {
+    width: 200px;
+    height: 200px;
+}
+
+.navbar .nav-logo {
+    display: flex;
+    
 }
 
 .navbar .nav-menu {
@@ -129,8 +140,8 @@ header .navbar {
 }
 
 .navbar .nav-menu .nav-link:hover {
-    color: var(--primary-color);
-    background: var(--secondary-color)
+    color: black;
+    background: white;
 }
 
 .navbar :where(#menu-close-button, #menu-open-button) {
@@ -574,7 +585,7 @@ header .navbar {
     .hero-section .section-content {
         gap: 50px;
         text-align: center;
-        padding: 30px 20px 20px;
+        padding: 150px 20px 20px;
         flex-direction: column-reverse;
         justify-content: center;
     }
@@ -654,3 +665,5 @@ header .navbar {
         gap: 20px;
     }
 }
+
+
